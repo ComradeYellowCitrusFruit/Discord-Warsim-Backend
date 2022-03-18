@@ -73,6 +73,20 @@ class items:
     ###         ...ETC...
     ###     <--- END PROPERTIES --->
     ### <--- END ITEM --->
+    
+    ### Try using dictionaries to format the code and remove the {} because unless they are in quotes, they will break the code. Example:
+    ### item_name = {
+    ###     "ID": "item_id",
+    ###     "NAME": "item_name",
+    ###     "DESCRIPTION": "item_decription",
+    ###     "COST": "item_cost",
+    ###     ...ETC...
+    ###     "PROPERTIES": {
+    ###         "EFFECT_ID": "effect"
+    ###         ...ETC...
+    ###     }
+    ### }
+    
     def __init__(self):
         itemList = open('config/items.txt', 'r')
         self.itemList = itemList.read()     
